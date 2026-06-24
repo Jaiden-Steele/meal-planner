@@ -1,0 +1,3 @@
+,name,ingredients,category,cook_time,cost,serving,tags
+0,Pasta,"[{""name"": ""pasta"", ""quantity"": 1, ""unit"": ""cups""}]",Italian,20,5.0,4,"['dinner', 'quick']"
+1,Salad,"[{""name"": ""lettuce"", ""quantity"": 1, ""unit"": ""cups""}, {""name"": ""tomato"", ""quantity"": 2, ""unit"": ""pcs""}]",Vegetarian,10,3.0,2,"['lunch', 'quick']"

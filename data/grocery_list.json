@@ -1,0 +1,14 @@
+{
+    "pasta":{
+        "quantity":1.0,
+        "unit":"cups"
+    },
+    "lettuce":{
+        "quantity":1.0,
+        "unit":"cups"
+    },
+    "tomato":{
+        "quantity":2.0,
+        "unit":"pcs"
+    }
+}
