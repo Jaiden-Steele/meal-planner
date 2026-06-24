@@ -14,7 +14,7 @@ class GroceryList:
         # 2. Load the Pantry JSON (FIXED: points to root 'inventory.json' used by your Pantry class)
         try:
             # We reset the index here as well to cleanly expose a 'name' column for masks
-            self.pantry = pd.read_json("inventory.json", orient="index").reset_index(names=["name"])
+            self.pantry = pd.read_json("data/pantry.json", orient="index").reset_index(names=["name"])
         except (FileNotFoundError, ValueError):
             self.pantry = pd.DataFrame(columns=["name", "quantity", "unit"])
 
@@ -66,7 +66,7 @@ class GroceryList:
         """Expects a pandas Series or dict containing an 'ingredients' JSON string."""
         # Reload pantry database to ensure calculations are based on fresh data
         try:
-            self.pantry = pd.read_json("inventory.json", orient="index").reset_index(names=["name"])
+            self.pantry = pd.read_json("data/pantry.json", orient="index").reset_index(names=["name"])
         except (FileNotFoundError, ValueError):
             self.pantry = pd.DataFrame(columns=["name", "quantity", "unit"])
 
